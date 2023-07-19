@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            //1. function defination 
+            function checkForPalindrom(n){
+                //alert(n);
+
+                var isPalindrom = false
+                for(j=(n.length-1);j>=0;j--){
+                    console.log(n.charAt(j));
+                    for(var i=0; i<n.length;i++){
+                        console.log(n.charAt(i));
+                    
+                        if(n.charAt(j) == n.charAt(i)){
+                        isPalindrom = true;
+                        }else{
+                            isPalindrom = false;
+                        }    
+                    }
+                }
+                if(isPalindrom == true){
+                    alert(n + " is a palindrom number")
+                }else{
+                    alert(n + " is not a palindrom number")
+                }
+            }
+
+
+           // prompt('please enter tne number to check if it is palindrom or not?')
+           let number = prompt('please enter tne number to check if it is palindrom or not?')
+           //alert(number);
+
+           //convert the string to number
+           
+           /*number= parseInt(number);  */
+           
+           //number= parseFloat(number); //   flont  number (3.14,1.63)
+
+           //string int number ---> parseint --->  integer
+           //'6336' + 10 ==> 633610
+           // parseint('6336') ==> 6336 + 10 => 6346
+           /*alert(number+10);*/
+           //console.log(number);
+
+           //2. function callig
+           checkForPalindrom(number);
+
+        </script>
+    </body>
+</html>
